@@ -47,7 +47,7 @@
 }
 
 .navigation.open ul li a {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -55,12 +55,12 @@
   color: #ffff;
 }
 
-.navigation ul li {
+.navigation>ul>li {
   margin: 1rem;
 }
 
-.navigation ul li a {
-  font-family: 'Poppins';
+.navigation > ul > li > a {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -71,7 +71,7 @@
 .toggle-menu {
   height: 45px;
   width: 45px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,18 +80,12 @@
 
 .toggle-menu.open .menu {
   transform: translateX(-45px);
-  background-color: transparent;
-
+  background-color: whitesmoke;
 }
 
 .toggle-menu.open .menu::before {
-    transform: rotate(45deg) translate(35px, -35px);
-    background-color: azure;
-}
-
-.toggle-menu.open .menu::after {
-  transform: rotate(-45deg) translate(35px, 35px);
-  background-color: azure;
+  transform: rotate(45deg) translate(35px, -35px);
+  background-color: rgb(139, 226, 226);
 }
 
 .menu {
@@ -100,7 +94,7 @@
   position: relative;
   background-color: #344563;
   border-radius: 5px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu::before,
@@ -111,15 +105,20 @@
   height: 4px; 
   background-color: #344563;
   border-radius: 5px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu::before {
-  transform: translateY(-10px);  
+  transform: translateY(-10px);
 }
 
 .menu::after {
   transform: translateY(10px);
+}
+
+.toggle-menu.open .menu::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background-color: azure;
 }
 
 .hero {
@@ -130,16 +129,16 @@
 }
 
 .description h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .description p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -153,7 +152,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .handles .icon ul {
@@ -165,7 +164,7 @@
 }
 
 .handles .icon ul li a {
-  color: #505F79;
+  color: #505f79;
   font-size: 1.5em;
 
 }
@@ -176,9 +175,8 @@
 
 @media (min-width:450px) and (max-width:767px){
     .hero {
-        background-image: url("./image/Desktop.png") 
-
-        }
+      background-image: url("./image/Desktop.png")
+     }
     }
 
 @media (min-width:768px){
@@ -206,4 +204,3 @@
       margin-top: 1rem;
     }
 }
-
