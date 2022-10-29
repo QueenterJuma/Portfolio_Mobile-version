@@ -77,6 +77,7 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  align-items: center;
 }
 
 .menu {
@@ -85,24 +86,27 @@
   position: relative;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
+  background-color: #344563;
 }
 
 .toggle-menu.open .menu {
   transform: translateX(-45px);
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 .menu::after {
   transform: translateY(10px);
 }
 
-.menu::before .menu::after {
+.menu::before,
+.menu::after {
   position: absolute;
   width: 30px;
   height: 4px;
   background-color: #344563;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
+  content: "";
 }
 
 .menu::before {
@@ -111,7 +115,7 @@
 
 .toggle-menu.open .menu::before {
   transform: rotate(45deg) translate(35px, -35px);
-  background-color: rgb(139, 226, 226);
+  background-color: azure;
 }
 
 .toggle-menu.open .menu::after {
@@ -180,6 +184,131 @@
   margin-top: 1rem;
 }
 
+.card-text {
+  width: 100%;
+  height: 288px;
+}
+
+.card-text h3 {
+  font-family: "Poppin, sans-serif";
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 20px;
+}
+
+.card-text p {
+  font-family: "Poppin, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 20px;
+}
+
+.prot {
+  font-family: "Poppin, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.prot li a {
+  font-family: "Poppin, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+}
+
+.prot li {
+  margin-right: 10px;
+}
+
+.lang {
+  font-family: "Poppin, sans-serif";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+}
+
+.lang li a {
+  font-family: "Poppin, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+}
+
+.lang li {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #6070ff;
+  background: #ebebff;
+}
+
+button {
+  margin-top: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px;
+  color: #396fd2;
+  border: 1px solid #396fd2;
+  border-radius: 10px;
+}
+
+ .plc-img1 {
+    background-image: url(./image/pic1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 228px;
+    background-size: 370px;
+  }
+
+  .plc-img2 {
+    background-image: url(./image/pic2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:228px;
+    background-size: 370px;
+
+  }
+
+  .plc-img3 {
+    background-image: url(./image/pic3.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:228px;
+    background-size: 370px;
+  }
+
+  .plc-img4 {
+    background-image: url(./image/pic4.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:228px;
+    background-size: 370px;
+  }
+
 @media (min-width: 768px) {
   .navigation {
     display: block;
@@ -191,6 +320,32 @@
 
   .hero {
     background-image: url("./image/Desktop.png");
+  }
+  .plc-img1 {
+    background-image: url(./image/pic1.png);
+    background-repeat: no-repeat;
+    background-size:450px;
+    height: 448px;
+  }
+
+  .plc-img2 {
+    background-image: url(./image/pic2.png);
+    background-repeat: no-repeat;
+    background-size:450px;
+    height: 448px;
+  }
+
+  .plc-img3 {
+    background-image: url(./image/pic3.png);
+    background-repeat: no-repeat;
+    background-size:450px;
+    height: 448px;
+  }
+  .plc-img4 {
+    background-image: url(./image/pic4.png);
+    background-repeat: no-repeat;
+    background-size:450px;
+    height: 448px;
   }
 
   .description {
@@ -204,4 +359,50 @@
   .handles .icon-text {
     margin-top: 1rem;
   }
+
+  #portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+    margin-top: 20px;
+    margin-left: 230px;
+  }
+
+  .card {
+    width: 1156px;
+    height: 496px;
+  }
+
+  .one {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row: 1 / 2;
+  }
+
+  .two {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-row: 2 / 3;
+  }
+
+  .three {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row: 3 / 4;
+  }
+
+  .four {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-row: 4 / 5;
+  }
+
 }
