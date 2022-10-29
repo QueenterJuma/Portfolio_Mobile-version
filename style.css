@@ -120,7 +120,6 @@
 }
 
 .hero {
-  
   background-image: url("./image/mobile.png"), url("./image/Desktop.png");
   background-repeat: no-repeat;
   display: flex;
