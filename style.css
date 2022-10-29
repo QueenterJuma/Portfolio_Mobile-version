@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +8,13 @@
 }
 
 .top-nav {
-  height: 72px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 14px 14px 0;
+  color: #6070ff;
 }
 
-.logo h2 a {
+.logo a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -74,7 +76,6 @@
   transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -82,7 +83,6 @@
   width: 30px;
   height: 4px;
   position: relative;
-  background-color: #344563;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -120,14 +120,22 @@
 }
 
 .hero {
-  
-  background-image: url("./image/mobile.png"), url("./image/Desktop.png");
+  background-image: url("./image/mobile.png");
   background-repeat: no-repeat;
   display: flex;
+  height: 600px;
   flex-direction: column;
 }
 
-.description h2 {
+.handles {
+  margin: 0 12px 12px 24px;
+}
+
+.description {
+  margin: 102px 24px 0;
+}
+
+.description h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -143,6 +151,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  margin: 12px 0;
 }
 
 .handles h4 {
@@ -159,7 +168,7 @@
 }
 
 .handles .icon ul li {
-  margin: 10px;
+  margin: 10px 10px 10px 0;
 }
 
 .handles .icon ul li a {
