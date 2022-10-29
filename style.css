@@ -13,7 +13,7 @@
 }
 
 .logo h2 a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -46,8 +46,17 @@
   margin-top: 2rem;
 }
 
+.navigation ul li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
 .navigation.open ul li a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -55,17 +64,8 @@
   color: #ffff;
 }
 
-.navigation>ul>li {
+.navigation ul li {
   margin: 1rem;
-}
-
-.navigation > ul > li > a {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
 }
 
 .toggle-menu {
@@ -78,16 +78,6 @@
   cursor: pointer;
 }
 
-.toggle-menu.open .menu {
-  transform: translateX(-45px);
-  background-color: whitesmoke;
-}
-
-.toggle-menu.open .menu::before {
-  transform: rotate(45deg) translate(35px, -35px);
-  background-color: rgb(139, 226, 226);
-}
-
 .menu {
   width: 30px;
   height: 4px;
@@ -97,12 +87,19 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu::before,
+.toggle-menu.open .menu {
+  transform: translateX(-45px);
+  background-color: whitesmoke;
+}
+
 .menu::after {
-  content: "";
+  transform: translateY(10px);
+}
+
+.menu::before .menu::after {
   position: absolute;
   width: 30px;
-  height: 4px; 
+  height: 4px;
   background-color: #344563;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
@@ -112,8 +109,9 @@
   transform: translateY(-10px);
 }
 
-.menu::after {
-  transform: translateY(10px);
+.toggle-menu.open .menu::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background-color: rgb(139, 226, 226);
 }
 
 .toggle-menu.open .menu::after {
@@ -122,14 +120,14 @@
 }
 
 .hero {
-  background-image: url("./image/mobile.png");
+  background-image: url("./image/mobile.png"), url("./image/Desktop.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
 
 .description h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -138,7 +136,7 @@
 }
 
 .description p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -147,7 +145,7 @@
 }
 
 .handles h4 {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -166,41 +164,34 @@
 .handles .icon ul li a {
   color: #505f79;
   font-size: 1.5em;
-
 }
 
 .handles .icon-text {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-@media (min-width:450px) and (max-width:767px){
-    .hero {
-      background-image: url("./image/Desktop.png")
-     }
-    }
+@media (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
 
-@media (min-width:768px){
-    .navigation{
-        display: block;
-    }
+  .toggle-menu {
+    display: none;
+  }
 
-    .toggle-menu {
-        display: none;
-    }
+  .hero {
+    background-image: url("./image/Desktop.png");
+  }
 
-    .hero {
-        background-image: url("./image/Desktop.png");
-    }
+  .description {
+    margin: 10rem 10rem 0 10rem;
+  }
 
-    .description {
-        margin: 10rem 10rem 0 10rem;
-    }
+  .handles {
+    margin: 0 10rem 10rem 10rem;
+  }
 
-    .handles {
-      margin: 0 10rem 10rem 10rem;
-    }
-
-    .handles .icon-text {
-      margin-top: 1rem;
-    }
+  .handles .icon-text {
+    margin-top: 1rem;
+  }
 }
