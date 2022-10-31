@@ -203,7 +203,7 @@
   display: flex;
   height: 600px;
   flex-direction: column;
-  background-size: 100%; 
+  background-size: 100%;
 }
 
 .handles {
@@ -319,7 +319,7 @@
   font-weight: 500px;
   font-size: 15px;
   line-height: 24px;
-  color: #6070FF;
+  color: #6070ff;
   display: flex;
 }
 
