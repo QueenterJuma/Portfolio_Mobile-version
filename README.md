@@ -4,9 +4,34 @@
 > Portfolio_1
 
 ## Built With
+Major language
 -CSS
 -HTML
 -JavaScript
+
+Technology
+-Visual studio code
+-git bash
+github
+
+## Getting Started
+
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+To get a local copy up and running follow these simple example steps.
+
+**Clone the repository
+```
+git clone https://github.com/QueenterJuma/Portfolio_1/pulls/2 
+```
+Navigate to the folder
+```
+cd repo-name
+```
+Checkout the branch
+```
+git checkout branch_mobile-version**
 
 ## Authors
 👤 **Queenter Juma**
