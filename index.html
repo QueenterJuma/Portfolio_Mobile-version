@@ -69,8 +69,8 @@
       </div>
     </section>
 
-    <section id="portfolio">
-    <div class="card one">
+    <section class="cards" id="portfolio">
+    <div class="d-flex-column card one">
       <div class="plc-img1" ></div>
       <div class="card-text">
         <h3>Tonic</h3>
@@ -88,7 +88,7 @@
         <button>See Project</button>
       </div>
     </div>
-    <div class="card two">
+    <div class="d-flex-column card two">
       <div class="plc-img2"></div>
       <div class="card-text">
         <h3>Multipost Stories</h3>
@@ -106,7 +106,7 @@
         <button>See project</button>
       </div>
     </div>
-    <div class="card three">
+    <div class="d-flex-column card three">
       <div class="plc-img3"></div>
       <div class="card-text">
         <h3>Tonic</h3>
@@ -124,7 +124,7 @@
         <button>See Project</button>
       </div>
     </div>
-    <div class="card four">
+    <div class="d-flex-column card four">
       <div class="plc-img4"></div>
       <div class="card-text">
         <h3>Multipose Stories</h3>
@@ -143,12 +143,12 @@
       </div>
     </div>
     </section>
-    <section>
+    <section class="d-flex-column">
         <div class="me">
-            <div class="description">
-        <h1>
+            <div class="description desc">
+        <h2>
           About Myself
-        </h1>
+        </h2>
         <p>
           I'm a software developer! I can help you build a product, feature or
           website. Look through some of my works and experience! If youlike what
@@ -183,7 +183,37 @@
           </ul>
         </div>
       </div>
-        </div>
+
+      <div class="language">
+        <ul class="d-flex-column">
+             <li class="d-flex-row space-between">
+                <div>Languages</div>
+                <span class="fa fa-chevron-down"></span>
+            </li>
+            <li class="d-flex-row prog">
+                <img src="image/js.png" alt="javascript logo">
+                    <p>Javascript</p>
+            </li>
+
+            <li class="d-flex-row prog">
+                <img src="image/html.png" alt="html image">
+                <p>HTML</p>
+            </li>
+            <li class="d-flex-row prog">
+                <img src="./image/css.png" alt="css image">
+                <p>CSS</p>
+            </li>
+            <li>
+            <div class="d-flex-row space-between skill">
+                <p>Frameworks</p>
+               <span class="fa fa-chevron-right"></span>
+            </li>
+            <li class="d-flex-row space-between">
+                <p>Skills</p>
+                <span class="fa fa-chevron-right"></span>
+            </li>
+        </ul>
+    </div>
     </section>
     <script src="script.js"></script>
   </body>

@@ -5,6 +5,21 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "poppins", sans-serif;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .top-nav {
@@ -21,6 +36,33 @@
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+}
+
+.language {
+  padding: 24px;
+}
+
+.language li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.language span {
+  color: #acb7c3;
+}
+
+.language .prog {
+  width: 90%;
+  background-color: #f7f7f9;
+  border: none;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.language p {
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .navigation {
@@ -48,6 +90,26 @@
   margin-top: 2rem;
 }
 
+.prot li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+}
+
+.lang li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+}
+
 .navigation ul li a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -64,6 +126,18 @@
   font-size: 32px;
   line-height: 44px;
   color: #ffff;
+}
+
+.prot li {
+  margin-right: 10px;
+}
+
+.lang li {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #6070ff;
+  background: #ebebff;
 }
 
 .navigation ul li {
@@ -139,6 +213,10 @@
   margin: 102px 24px 0;
 }
 
+.me .desc {
+  margin: 0 24px 0;
+}
+
 .description h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -184,13 +262,18 @@
   margin-top: 1rem;
 }
 
+.cards {
+  display: grid;
+  padding: 24px;
+}
+
 .card-text {
   width: 100%;
   height: 288px;
 }
 
 .card-text h3 {
-  font-family: "Poppin, sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700px;
   font-size: 32px;
@@ -200,7 +283,7 @@
 }
 
 .card-text p {
-  font-family: "Poppin, sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -210,7 +293,7 @@
 }
 
 .prot {
-  font-family: "Poppin, sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -218,25 +301,10 @@
   color: #344563;
   display: flex;
   flex-direction: row;
-  
-}
-
-.prot li a {
-  font-family: "Poppin, sans-serif";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
-  display: flex;
-}
-
-.prot li {
-  margin-right: 10px;
 }
 
 .lang {
-  font-family: "Poppin, sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400px;
   font-size: 15px;
@@ -245,27 +313,9 @@
   display: flex;
 }
 
-.lang li a {
-  font-family: "Poppin, sans-serif";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
-  display: flex;
-}
-
-.lang li {
-  margin-right: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  color: #6070ff;
-  background: #ebebff;
-}
-
 button {
   margin-top: 10px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -273,41 +323,50 @@ button {
   padding: 10px;
   color: #396fd2;
   border: 1px solid #396fd2;
+  background-color: #fff;
   border-radius: 10px;
 }
 
- .plc-img1 {
-    background-image: url(./image/pic1.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 228px;
-    background-size: 370px;
-  }
+button:hover {
+  color: #fff;
+  background-color: #396fd2;
+}
 
-  .plc-img2 {
-    background-image: url(./image/pic2.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height:228px;
-    background-size: 370px;
+button:active {
+  background-color: #2230d2;
+}
 
-  }
+.plc-img1 {
+  background-image: url(./image/pic1.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 228px;
+  background-size: 100%;
+}
 
-  .plc-img3 {
-    background-image: url(./image/pic3.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height:228px;
-    background-size: 370px;
-  }
+.plc-img2 {
+  background-image: url(./image/pic2.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 228px;
+  background-size: 100%;
+}
 
-  .plc-img4 {
-    background-image: url(./image/pic4.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height:228px;
-    background-size: 370px;
-  }
+.plc-img3 {
+  background-image: url(./image/pic3.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 228px;
+  background-size: 100%;
+}
+
+.plc-img4 {
+  background-image: url(./image/pic4.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 228px;
+  background-size: 100%;
+}
 
 @media (min-width: 768px) {
   .navigation {
@@ -321,30 +380,32 @@ button {
   .hero {
     background-image: url("./image/Desktop.png");
   }
+
   .plc-img1 {
     background-image: url(./image/pic1.png);
     background-repeat: no-repeat;
-    background-size:450px;
+    background-size: 450px;
     height: 448px;
   }
 
   .plc-img2 {
     background-image: url(./image/pic2.png);
     background-repeat: no-repeat;
-    background-size:450px;
+    background-size: 450px;
     height: 448px;
   }
 
   .plc-img3 {
     background-image: url(./image/pic3.png);
     background-repeat: no-repeat;
-    background-size:450px;
+    background-size: 450px;
     height: 448px;
   }
+
   .plc-img4 {
     background-image: url(./image/pic4.png);
     background-repeat: no-repeat;
-    background-size:450px;
+    background-size: 450px;
     height: 448px;
   }
 
@@ -405,4 +466,31 @@ button {
     grid-row: 4 / 5;
   }
 
+  .language {
+    height: 24px;
+    right: 78px;
+    top: calc(50% - 24px / 2);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .language ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  .skill {
+    height: 60px;
+    width: 303px;
+    padding: 0 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 2px solid #dfe1e6;
+  }
 }
