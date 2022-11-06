@@ -346,6 +346,50 @@ button:active {
   background-color: #2230d2;
 }
 
+.f-header {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 90px;
+  font-size: 30px;
+  line-height: 52px;
+  color: #ffffff;
+}
+
+.f-text {
+  margin: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+input {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  height: 40px;
+  width: 345px;
+  margin: 10px;
+  border-radius: 10px; 
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+.f-button {
+  border-radius: 8px;
+  margin: 0px 221px 0px 0px;
+  margin-bottom: 30px;
+}
+
 .plc-img1 {
   background-image: url(./image/pic1.png);
   background-repeat: no-repeat;
@@ -377,6 +421,22 @@ button:active {
   height: 228px;
   background-size: 100%;
 }
+
+.contact-f {
+  background: #6070ff;
+  border-top-left-radius: 50px;
+  background-image: url(./image/form-img2.png);
+  background-size: 200px;
+  width: 100%;
+  height: 720px;
+  background-position-x: right;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 
 @media (min-width: 768px) {
   .navigation {
@@ -418,6 +478,21 @@ button:active {
     background-size: 450px;
     height: 448px;
   }
+
+  .contact-f {
+  background: #6070ff;
+  border-top-left-radius: 50px;
+  background-image: url(./image/form-img2.png);
+  background-size: 200px;
+  width: 100%;
+  height: 720px;
+  background-position-x: right;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
   .description {
     margin: 10rem 10rem 0 10rem;
@@ -502,5 +577,49 @@ button:active {
     justify-content: space-between;
     background-color: #fff;
     border-bottom: 2px solid #dfe1e6;
+  }
+  
+  .f-header {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 90px;
+    font-size: 30px;
+    line-height: 52px;
+    color: #ffffff;
+  }
+  
+  .f-text {
+    margin: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+  
+  input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
+    height: 40px;
+    width: 345px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  textarea {
+    border-radius: 10px;
+  }
+  
+  .f-button {
+    border-radius: 8px;
+    margin: 0px 221px 0px 0px;
+    margin-bottom: 30px;
   }
 }
