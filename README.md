@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project name
-> Portfolio_1
+> Portfolio_Mobile-version
 
 ## Built With
 Major language
@@ -39,9 +39,9 @@ git checkout branch_mobile-version**
 - Twitter:(https://twitter.com/QueenJumah)
 - LinkedIn:(https://www.linkedin.com/in/queenter-juma-54a0b1222/)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
+## 🤝 Contributor
+>ilyassatlassi 
+-Colaborator
 
 ## Show your support
 

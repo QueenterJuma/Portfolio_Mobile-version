@@ -6,6 +6,8 @@
   text-decoration: none;
   list-style: none;
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .d-flex-row {
@@ -346,50 +348,6 @@ button:active {
   background-color: #2230d2;
 }
 
-.f-header {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  margin-top: 90px;
-  font-size: 30px;
-  line-height: 52px;
-  color: #ffffff;
-}
-
-.f-text {
-  margin: 10px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
-}
-
-input {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  color: #172b4d;
-  height: 40px;
-  width: 345px;
-  margin: 10px;
-  border-radius: 10px; 
-}
-
-textarea {
-  border-radius: 10px;
-}
-
-.f-button {
-  border-radius: 8px;
-  margin: 0px 221px 0px 0px;
-  margin-bottom: 30px;
-}
-
 .plc-img1 {
   background-image: url(./image/pic1.png);
   background-repeat: no-repeat;
@@ -422,204 +380,74 @@ textarea {
   background-size: 100%;
 }
 
-.contact-f {
-  background: #6070ff;
-  border-top-left-radius: 50px;
+.f-contact {
   background-image: url(./image/form-img2.png);
-  background-size: 200px;
-  width: 100%;
-  height: 720px;
-  background-position-x: right;
-  background-position-y: 20px;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  background-size: contain;
+  background-position: right;
+  padding: 100px 24px 40px 24px;
   text-align: center;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
+  padding-top: 50px;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
 }
 
+.f-contact h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
 
-@media (min-width: 768px) {
-  .navigation {
-    display: block;
-  }
+.paragraph {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #ebebff;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
 
-  .toggle-menu {
-    display: none;
-  }
+.f-contact form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .hero {
-    background-image: url("./image/Desktop.png");
-  }
+.f-contact input {
+  border: 1px solid #cfd8cf;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  height: 48px;
+  width: 327px;
+}
 
-  .plc-img1 {
-    background-image: url(./image/pic1.png);
-    background-repeat: no-repeat;
-    background-size: 450px;
-    height: 448px;
-  }
+.f-contact textarea {
+  border: 1px solid #cfd8cf;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 10px;
+  width: 327px;
+  height: 170px;
+  font-size: 17px;
+}
 
-  .plc-img2 {
-    background-image: url(./image/pic2.png);
-    background-repeat: no-repeat;
-    background-size: 450px;
-    height: 448px;
-  }
-
-  .plc-img3 {
-    background-image: url(./image/pic3.png);
-    background-repeat: no-repeat;
-    background-size: 450px;
-    height: 448px;
-  }
-
-  .plc-img4 {
-    background-image: url(./image/pic4.png);
-    background-repeat: no-repeat;
-    background-size: 450px;
-    height: 448px;
-  }
-  
-  .contact-f {
-    background: #6070ff;
-    border-top-left-radius: 50px;
-    background-image: url(./image/form-img2.png);
-    background-size: 200px;
-    width: 100%;
-    height: 720px;
-    background-position-x: right;
-    background-position-y: 20px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  } 
-
-  .description {
-    margin: 10rem 10rem 0 10rem;
-  }
-
-  .handles {
-    margin: 0 10rem 10rem 10rem;
-  }
-
-  .handles .icon-text {
-    margin-top: 1rem;
-  }
-
-  #portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 45px;
-    margin-top: 20px;
-    margin-left: 230px;
-  }
-
-  .card {
-    width: 1156px;
-    height: 496px;
-  }
-
-  .one {
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-row: 1 / 2;
-  }
-
-  .two {
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    grid-row: 2 / 3;
-  }
-
-  .three {
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-row: 3 / 4;
-  }
-
-  .four {
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    grid-row: 4 / 5;
-  }
-
-  .language {
-    height: 24px;
-    right: 78px;
-    top: calc(50% - 24px / 2);
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-  }
-
-  .language ul li {
-    display: flex;
-    align-items: center;
-  }
-
-  .skill {
-    height: 60px;
-    width: 303px;
-    padding: 0 23px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    border-bottom: 2px solid #dfe1e6;
-  }
-  
-  .f-header {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    margin-top: 90px;
-    font-size: 30px;
-    line-height: 52px;
-    color: #ffffff;
-  }
-  
-  .f-text {
-    margin: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #ebebff;
-  }
-  
-  input {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    color: #172b4d;
-    height: 40px;
-    width: 345px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  
-  textarea {
-    border-radius: 10px;
-  }
-  
-  .f-button {
-    border-radius: 8px;
-    margin: 0px 221px 0px 0px;
-    margin-bottom: 30px;
-  }
+.getintouch {
+  margin-left: -190px;
 }
