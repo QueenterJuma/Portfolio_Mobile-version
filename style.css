@@ -392,7 +392,7 @@ button:active {
   padding-top: 50px;
   margin-top: 50px;
   width: 100%;
-  height: 779px;
+  height: auto;
 }
 
 .f-contact h2 {
@@ -409,7 +409,7 @@ button:active {
 
 .paragraph {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #ebebff;
   font-style: normal;
   line-height: 28px;
@@ -421,8 +421,9 @@ button:active {
 .f-contact form {
   margin-top: 20px;
   margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .f-contact input {
@@ -444,36 +445,9 @@ button:active {
   margin-top: 10px;
   width: 327px;
   height: 170px;
-}
-
-.f-contact #button {
-  padding: 12px, 16px, 12px, 16px;
-  width: 140px;
-  height: 48px;
-  color: #6070ff;
-  background: #fff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
   font-size: 17px;
-  line-height: 20px;
-  margin: 5px;
 }
 
-.f-contact input::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  color: #172b4d;
-}
-
-.f-contact #text ::placeholder {
-  color: #b3bac5;
-}
-
-.shape {
-  margin-top: 10px;
-  padding: 20px;
-  align-items: center;
+.getintouch {
+  margin-left: -190px;
 }
